@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PhClockUser, PhHandHeart, PhHouse, PhSyringe } from '@phosphor-icons/vue';
+import { PhClockUser, PhHandHeart, PhHouse, PhSyringe, PhUser } from '@phosphor-icons/vue';
 import { useRoute } from 'vue-router';
 import SidebarOption from './SidebarOption.vue';
 
@@ -12,6 +12,7 @@ const route = useRoute();
     <SidebarOption :icon="PhSyringe" label="Buscar Hemocentros" :selected="route.name === 'buscar-hemocentros'"/>
     <SidebarOption :icon="PhHandHeart" label="Minhas Doações" :selected="route.name === 'minhas-doacoes'"/>
     <SidebarOption :icon="PhClockUser" label="Agendamentos" :selected="route.name === 'doador-agendamentos'"/>
+    <SidebarOption :icon="PhUser" label="Meus Dados" :selected="route.name === 'meus-dados'"/>
 </template>
 
 <style scoped>
