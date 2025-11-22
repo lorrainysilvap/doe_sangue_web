@@ -4,6 +4,7 @@ import ViewPaginaInicialDoador from "../views/doador/ViewPaginaInicialDoador.vue
 import ViewBuscarHemocentro from "../views/doador/ViewBuscarHemocentro.vue";
 import ViewMeusDadosDoador from "../views/doador/ViewMeusDadosDoador.vue";
 import ViewMinhasDoacoes from "../views/doador/ViewMinhasDoacoes.vue";
+import ViewAgendamentos from "../views/doador/ViewAgendamentos.vue";
 
 export const routesDoador : RouteRecordRaw[] = [
   {
@@ -21,11 +22,11 @@ export const routesDoador : RouteRecordRaw[] = [
     name: RouteNames.MINHAS_DOACOES,
     component: ViewMinhasDoacoes
   },
-  // {
-  //   path: '/doador/agendamentos',
-  //   name: RouteNames.AGENDAMENTOS_DOADOR,
-  //   component: 
-  // },
+  {
+    path: '/doador/agendamentos',
+    name: RouteNames.AGENDAMENTOS_DOADOR,
+    component: ViewAgendamentos 
+  },
   {
     path: '/doador/meus-dados',
     name: RouteNames.MEUS_DADOS_DOADOR,
