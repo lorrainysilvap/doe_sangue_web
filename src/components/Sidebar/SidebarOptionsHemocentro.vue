@@ -8,10 +8,10 @@ const route = useRoute();
 </script>
 
 <template>
-    <SidebarOption :icon="PhChartPieSlice" label="Dashboard" :selected="route.name === 'dashboard'"/>
-    <SidebarOption :icon="PhUser" label="Doadores" :selected="route.name === 'doadores'"/>
-    <SidebarOption :icon="PhCardsThree" label="Banco de Sangue" :selected="route.name === 'banco-de-sangue'"/>
-    <SidebarOption :icon="PhClockUser" label="Agendamentos" :selected="route.name === 'hemocentro-agendamentos'"/>
+    <SidebarOption :icon="PhChartPieSlice" label="Dashboard" :selected="route.name === 'dashboard'" route=""/>
+    <SidebarOption :icon="PhUser" label="Doadores" :selected="route.name === 'doadores'" route=""/>
+    <SidebarOption :icon="PhCardsThree" label="Banco de Sangue" :selected="route.name === 'banco-de-sangue'" route=""/>
+    <SidebarOption :icon="PhClockUser" label="Agendamentos" :selected="route.name === 'hemocentro-agendamentos'" route=""/>
 </template>
 
 <style scoped>

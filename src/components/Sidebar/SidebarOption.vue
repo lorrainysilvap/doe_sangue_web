@@ -1,15 +1,23 @@
 <script setup lang="ts">
 import type { Component } from 'vue';
+import { useRouter } from 'vue-router';
 
-defineProps<{
+const router = useRouter();
+
+const props = defineProps<{
     label: string;
     icon: Component;
     selected?: boolean;
+    route: string;
 }>();
+
+const goToRoute = () => {
+    router.push({name: props.route})
+}
 </script>
 
 <template>
-    <div class="option poppins-regular" :style="{backgroundColor: selected ? 'var(--secondary-color)' : '#FFFFFF' }">
+    <div @click="goToRoute" class="option poppins-regular" :style="{backgroundColor: selected ? 'var(--secondary-color)' : '#FFFFFF' }">
         <component :is="icon" :size="20" :color="selected ? '#FFFFFF' : 'var(--secondary-color)'"/>
         <p :style="{color: selected ? '#FFFFFF' : 'var(--secondary-color)'}">{{ label }}</p>
     </div>
@@ -29,5 +37,7 @@ defineProps<{
     background-color: var(--secondary-color);
     padding: 0 20px;
     border-radius: 16px;
+
+    cursor: pointer;
 }
 </style>

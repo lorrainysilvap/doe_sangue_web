@@ -13,8 +13,8 @@ import SidebarOption from './SidebarOption.vue';
             <slot></slot>
         </section>
         <section class="config-logout">
-            <SidebarOption :icon="PhGear" label="Configurações"/>
-            <SidebarOption :icon="PhSignOut" label="Sair"/>
+            <SidebarOption :icon="PhGear" label="Configurações" route=""/>
+            <SidebarOption :icon="PhSignOut" label="Sair" route=""/>
         </section>
     </div>
 </template>
