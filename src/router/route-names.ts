@@ -7,6 +7,7 @@ export const RouteNames = {
     PONTOS_COLETA: "pontos-coleta",
     QUIZ_APTIDAO: "quiz-aptidao",
     REQUISITOS_DOACAO: "requisitos-doacao",
+    SOBRE_NOS: "sobre-nos",
     
     HOME_DOADOR: "home-doador",
     HOME_HEMOCENTRO: "home-hemocentro",
@@ -14,6 +15,4 @@ export const RouteNames = {
     MINHAS_DOACOES: "minhas-doacoes",
     AGENDAMENTOS_DOADOR: "agendamentos-doador",
     MEUS_DADOS_DOADOR: "meus-dados-doador" ,
-
-
 } as const

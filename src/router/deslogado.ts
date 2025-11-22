@@ -5,6 +5,7 @@ import ViewLogin from "../views/ViewLogin.vue";
 import ViewCadastro from "../views/ViewCadastro.vue";
 import ViewRequisitosDoacao from "../views/landing/ViewRequisitosDoacao.vue";
 import ViewRecuperacaoSenha from "../views/recuperacaoSenha/ViewRecuperacaoSenha.vue";
+import ViewSobreNos from "../views/landing/ViewSobreNos.vue";
 
 export const routesDeslogadas : RouteRecordRaw[] = [
     {
@@ -31,5 +32,10 @@ export const routesDeslogadas : RouteRecordRaw[] = [
       path: '/recuperar-senha',
       name: RouteNames.RECUPERAR_SENHA,
       component: ViewRecuperacaoSenha
+    },
+    {
+      path: '/sobre-nos',
+      name: RouteNames.SOBRE_NOS,
+      component: ViewSobreNos
     },
 ];
