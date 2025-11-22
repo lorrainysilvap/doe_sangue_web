@@ -24,6 +24,11 @@ button {
     border-radius: 8px;
     border: none;
     transition: 0.5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover {
