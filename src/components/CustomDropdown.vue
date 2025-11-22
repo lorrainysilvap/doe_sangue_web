@@ -30,7 +30,7 @@ const selectOption = (option: string) => {
 <template>
     <div class="dropdown-container">
 
-        <label v-if="title" class="dropdown-label poppins-medium">{{ title }}</label>
+        <label v-if="title" class="dropdown-label poppins-regular">{{ title }}</label>
 
 
         <div class="dropdown-header" @click="toggleDropdown">
@@ -59,22 +59,19 @@ const selectOption = (option: string) => {
 
     width: 100%;
     position: relative;
-    font-family: 'Poppins', sans-serif;
     margin-bottom: 16px;
 
 }
 
 .dropdown-label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
-    font-weight: 600;
-    color: var(--label-color);
 }
 
 .dropdown-header {
     width: 100%;
-    height: 45px;
+    height: 40px;
     background-color: #fff;
     border: 1px solid var(--input-border-color);
     color: var(--font-color);
