@@ -12,7 +12,7 @@ const simpleViews = [RouteNames.LANDING_PAGE, RouteNames.LOGIN] as string[];
         <RouterView/>
     </div>
     <div v-else>
-        <LayoutLogado sidebar-doador>
+        <LayoutLogado :sidebar-doador="route.path.includes('doador')">
             <RouterView/>
         </LayoutLogado>
     </div>
