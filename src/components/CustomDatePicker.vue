@@ -3,6 +3,11 @@ import { ref, computed } from 'vue';
 import { PhCalendar } from '@phosphor-icons/vue';
 
 
+const props = defineProps<{
+    id?: string;
+    title: string;
+}>();
+
 const today = new Date();
 const selectedDate = ref<string>(
     `${String(today.getDate()).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`
@@ -127,11 +132,14 @@ const calendarDays = computed<DayCell[]>(() => {
 });
 
 const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+
+
+
 </script>
 
 <template>
     <div class="date-picker-wrapper poppins-medium">
-        
+        <label id="date-picker-label" class="poppins-medium">{{ title }}</label>
         <div class="date-input-container" @click="toggleCalendar">
             <input 
                 type="text" 
@@ -193,10 +201,11 @@ const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 
 <style scoped>
 
+
+
 .date-picker-wrapper {
     position: relative; 
     width: 250px; 
-    margin: 16px 0;
 }
 
 .date-input-container {
@@ -206,7 +215,7 @@ const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
     background-color: white;
     height: var(--input-height);
     padding-right: 10px;
-    margin: 16px 0;
+    margin: 8px 0;
 }
 
 .date-input {
