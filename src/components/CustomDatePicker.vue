@@ -139,7 +139,7 @@ const daysOfWeek = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
 
 <template>
     <div class="date-picker-wrapper poppins-medium">
-        <label id="date-picker-label" class="poppins-medium">{{ title }}</label>
+        <label id="date-picker-label" class="poppins-regular">{{ title }}</label>
         <div class="date-input-container" @click="toggleCalendar">
             <input 
                 type="text" 
