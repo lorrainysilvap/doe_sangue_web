@@ -10,9 +10,11 @@ export const RouteNames = {
     SOBRE_NOS: "sobre-nos",
     
     HOME_DOADOR: "home-doador",
-    HOME_HEMOCENTRO: "home-hemocentro",
     BUSCAR_HEMOCENTROS_DOADOR: "buscar-hemocentros",
     MINHAS_DOACOES: "minhas-doacoes",
     AGENDAMENTOS_DOADOR: "agendamentos-doador",
     MEUS_DADOS_DOADOR: "meus-dados-doador" ,
+
+    HOME_HEMOCENTRO: "home-hemocentro",
+    BOLSAS_SANGUE_HEMOCENTRO: "bolsas-sangue"
 } as const
