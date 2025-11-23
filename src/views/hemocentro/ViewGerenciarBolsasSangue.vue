@@ -113,7 +113,10 @@ const ResultadoSorologico = ref("");
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow-y: auto;
+    height: 100%;
 }
+
 
 main {
     display: flex;
